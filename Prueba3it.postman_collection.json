@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "5c18dd44-3230-4c14-ba7d-c91574bc6d10",
+		"name": "Prueba3it",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12234589"
+	},
+	"item": [
+		{
+			"name": "listar-encuestas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/encuestas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"encuestas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrar-encuesta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"pruebax@gmail.com\",\r\n    \"estilo_musical\": \"Jazz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/encuestas/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"encuestas",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
